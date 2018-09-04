@@ -1,0 +1,56 @@
+.body {
+    width: 1279px;
+    height: 6802px;
+    margin: 0;
+    background-color: white;
+}
+
+.t-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.t-section:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.t-section:nth-child(even) {
+    background-color: #323232;
+}
+
+.t-section-child:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.t-section-child:nth-child(even) {
+    background-color: #323232;
+}
+
+.header {
+    height: 1015px;
+}
+
+.last_articles {
+    height: 609px;
+}
+
+.last_articles--featured {
+      height: 384px;
+}
+
+.materials {
+    height: 959px;
+}
+
+.authors {
+    height: 1350px;
+}
+
+.instagram {
+    height: 1000px;
+}
+
+.footer {
+    height: 700px;
+}
