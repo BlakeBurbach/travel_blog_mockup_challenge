@@ -2,6 +2,9 @@
     --dark-grey-txt: #4a4a4a;
     --light-grey-txt: #4a4a4a86;
     --transparent-bottom-border: var(--transparent-bottom-border); 
+    --white-background: #ffffff;
+    --dark-background: #323232;
+    --font-georgia: Georgia, 'Times New Roman', Times, serif;
 }
 
 .body {
@@ -20,11 +23,11 @@
 }
 
 .t-section:nth-child(odd) {
-    background-color: #ffffff;
+    background-color: var(--white-background);
 }
 
 .t-section:nth-child(even) {
-    background-color: #323232;
+    background-color: var(--dark-background);
 }
 
 .t-header {
@@ -58,7 +61,7 @@
             width: auto;
             margin-right: 5%;
             text-decoration: none;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: var(--font-georgia);
             font-size: 16px;
             font-weight: 700;
         }
@@ -101,11 +104,11 @@
 }
 
 .last_articles--featured:nth-child(odd) {
-    background-color: #323232;
+    background-color: var(--dark-background);
 }
 
 .last_articles--featured:nth-child(even) {
-    background-color: #ffffff;
+    background-color: var(--white-background);
 }
 
 .materials {
