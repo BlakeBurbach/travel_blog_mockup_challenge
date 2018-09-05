@@ -1,4 +1,5 @@
 :root {
+    --main-yellow: #f8b91c;
     --dark-grey-txt: #4a4a4a;
     --light-grey-txt: #4a4a4a86;
     --transparent-bottom-border: var(--transparent-bottom-border); 
@@ -63,7 +64,6 @@
     align-items: stretch;
     margin-top: 32px;
     margin-bottom: 32px;
-    box-sizing: border-box;
 }
 
         .t-nav-text {
@@ -88,9 +88,9 @@
             color: var(--dark-grey-txt);
         }
 
-        .nav-item--yellow-line {
+        .t-nav-item--yellow-line {
             width: 100%;
-            border-bottom: 2px solid #f8b91c;
+            border-bottom: 2px solid var(--main-yellow);
         }
 
 
