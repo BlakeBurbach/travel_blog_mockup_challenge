@@ -2,7 +2,7 @@
     width: 1279px;
     height: 6802px;
     margin: 0;
-    background-color: white;
+    background-color: white; 
 }
 
 .t-section {
@@ -11,7 +11,6 @@
     margin-right: auto;
     display: flex;
     justify-content: start;
-    align-items: center;
 }
 
 .t-section:nth-child(odd) {
@@ -28,23 +27,103 @@
 
 .t-side-nav {
     margin: 0;
-    width: 254px;
+    width: 215px;
     height: 100%;
 }
 
-.header-hero {
-    background-image: url('images/aerial_island.jpg');
+.t-nav-list {
+    width: 100%;
+    padding-top: 50%;
+    padding-left: 25%;
+    padding-right: 5%;
+    list-style-type: none;
+}
+
+.t-nav-list--item {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+}
+
+    .t-li-active:hover {
+        border-bottom: none;
+    }
+
+    .t-li-disable {
+        width: 100%;
+        border-bottom: 2px solid transparent;
+    }
+
+        .t-nav-text {
+            width: auto;
+            margin-right: 5%;
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .t-nav-list--item_link {
+            color: #4a4a4a86;
+            border-bottom: 2px solid transparent;
+        }
+
+        .t-nav-list--item_link:hover {
+            transition: 0.2s;
+            color: #4a4a4a;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-item--black-line {
+            width: 100%;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .nav-item--black-line:hover {
+            transition: 0.2s;
+            border-bottom: 2px solid #323232;
+        }
+
+        .t-nav-list--item_link--active {
+            color: #4a4a4a;
+        }
+
+        .nav-item--yellow-line {
+            width: 100%;
+            border-bottom: 2px solid #f8b91c;
+        }
+
+
+.t-header-hero {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0), 
+        rgba(50, 50, 50, 0.972)
+        ),
+        url('images/aerial_island.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
 }
 
 .last_articles {
-    height: 609px;
+    height: 1008px;
 }
 
 .last_articles--featured {
-      height: 384px;
+    height: 384px;
+}
+
+.last_articles--featured:nth-child(odd) {
+    background-color: #323232;
+}
+
+.last_articles--featured:nth-child(even) {
+    background-color: #ffffff;
 }
 
 .materials {
@@ -60,5 +139,5 @@
 }
 
 .footer {
-    height: 700px;
+    height: 710px;
 }
