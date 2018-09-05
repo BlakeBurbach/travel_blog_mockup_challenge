@@ -9,6 +9,9 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .t-section:nth-child(odd) {
@@ -19,16 +22,21 @@
     background-color: #323232;
 }
 
-.t-section-child:nth-child(odd) {
-    background-color: #ffffff;
-}
-
-.t-section-child:nth-child(even) {
-    background-color: #323232;
-}
-
-.header {
+.t-header {
     height: 1015px;
+}
+
+.t-side-nav {
+    margin: 0;
+    width: 254px;
+    height: 100%;
+}
+
+.header-hero {
+    background-image: url('images/aerial_island.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .last_articles {
