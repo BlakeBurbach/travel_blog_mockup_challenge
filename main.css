@@ -6,13 +6,13 @@
     --white-background: #ffffff;
     --dark-background: #323232;
     --font-georgia: Georgia, 'Times New Roman', Times, serif;
+    --font-arial: Arial, Helvetica, sans-serif;
 }
 
 .body {
     width: 1279px;
     height: 6802px;
     margin: 0;
-    background-color: white; 
 }
 
 .t-section {
@@ -36,34 +36,37 @@
 }
 
 .t-side-nav {
-    margin: 0;
-    width: 150px;
+    display: block;
+    width: 12%;
     height: 100%;
+    margin: 0;
     padding-top: 25px;
     padding-left: 50px;
     padding-right: 10px;
-    display: block;
 }
 
 .logo {
     width: 80px;
-    height: 33px;
+    height: 30px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .t-nav-list {
-    margin-top: 50px;
-    padding: 0;
     width: 100%;
+    height: 300px;
+    margin-top: 45%;
+    padding: 0;
     list-style-type: none;
 }
 
 .t-nav-list--item {
-    width: 100%;
     display: flex;
-    align-items: stretch;
+    width: 100%;
     margin-top: 32px;
     margin-bottom: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
         .t-nav-text {
@@ -93,15 +96,46 @@
             border-bottom: 2px solid var(--main-yellow);
         }
 
+.sidenav--vertical_content {
+    position: relative;
+    display: block;
+    height: 20%;
+    margin-top: 20%;
+}
+    
+    .vertical_content--text {
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -76px;
+        top: 67px;
+        height: 50px;
+        margin-top: 0px;
+        margin-left: 15px;
+        font-family: var(--font-arial);
+        font-size: 14px;
+        color: var(--dark-grey-txt);
+    }
+
+    .vertical_content--yellow-line {
+        height: 20%;
+        margin-left: 5px;
+        border-left: 2px solid #f8b91c;
+    }
+
+    .t-nav-icon {
+        color: var(--dark-grey-txt);
+    }
 
 .t-header-hero {
+    width: 83.4%;
     background: linear-gradient(
         rgba(255, 255, 255, 0), 
         rgba(50, 50, 50, 0.972)
         ),
         url('images/aerial_island.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 0px 0px, 0px 0px;
+    background-size: auto, cover;
 }
 
 .last_articles {
