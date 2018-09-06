@@ -1,5 +1,6 @@
 :root {
     --main-yellow: #f8b91c;
+    --white-text: #fff;
     --dark-grey-txt: #4a4a4a;
     --light-grey-txt: #4a4a4a86;
     --transparent-bottom-border: var(--transparent-bottom-border); 
@@ -8,12 +9,18 @@
     --font-georgia: Georgia, 'Times New Roman', Times, serif;
     --font-arial: Arial, Helvetica, sans-serif;
     --yellow-border: 2px solid var(--main-yellow);
+    --hover-transition: 0.2s;
 }
 
 .body {
     width: 1279px;
     height: 6802px;
     margin: 0;
+    font-family: var(--font-arial);
+}
+
+div {
+    display: block;
 }
 
 .t-section {
@@ -34,68 +41,109 @@
 
 .t-header {
     height: 1015px;
+    justify-content: center;
 }
 
-.t-side-nav {
-    display: block;
-    width: 12%;
-    height: 100%;
-    margin: 0;
-    padding-top: 25px;
-    padding-left: 50px;
-    padding-right: 10px;
-}
+    .t-header-hero {
+        width: 83.4%;
+        background: linear-gradient(
+            rgba(255, 255, 255, 0), 
+            rgba(50, 50, 50, 0.972)
+            ),
+            url('images/aerial_island.jpg');
+        background-repeat: no-repeat;
+        background-position: 0px 0px, 0px 0px;
+        background-size: auto, cover;
+    }
 
-.logo {
-    width: 80px;
-    height: 30px;
-    display: inline-block;
-    vertical-align: middle;
-}
+    .t-header-content {
+        width: 50%;
+        margin-top: 32%;
+        text-align: center;
+    }
 
-.t-nav-list {
-    width: 100%;
-    height: 300px;
-    margin-top: 45%;
-    padding: 0;
-    list-style-type: none;
-}
-
-.t-nav-list--item {
-    display: flex;
-    width: 100%;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-        .t-nav-text {
-            width: auto;
-            margin-right: 5%;
-            text-decoration: none;
-            font-family: var(--font-georgia);
-            font-size: 16px;
-            font-weight: 700;
-        }
-
-        .t-nav-list--item_link {
-            color: var(--light-grey-txt);
-        }
-
-        .t-nav-list--item_link:hover {
-            transition: 0.2s;
-            color: var(--dark-grey-txt);
-        }
-
-        .t-nav-list--item_link--active {
-            color: var(--dark-grey-txt);
-        }
-
-        .t-nav-item--yellow-line {
-            width: 100%;
-            border-bottom: var(--yellow-border);
-        }
+    
+    .t-header-title {
+        margin-top: 5%;
+        color: var(--white-text);
+        font-size: 38px;
+        line-height: 44px;
+    }
+    
+    .t-header-text {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-family: var(--font-georgia);
+        color: var(--white-text);
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+    
+    .t-side-nav {
+        display: block;
+        width: 12%;
+        height: 100%;
+        margin: 0;
+        padding-top: 25px;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+    
+    .logo {
+        width: 80px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .t-nav-list {
+        width: 100%;
+        height: 300px;
+        margin-top: 45%;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    .t-nav-list--item {
+        display: flex;
+        width: 100%;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .t-nav-text {
+        width: auto;
+        margin-right: 5%;
+        text-decoration: none;
+        font-family: var(--font-georgia);
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .t-nav-list--item_link {
+        color: var(--light-grey-txt);
+    }
+    
+    .t-nav-list--item_link:hover {
+        transition: var(--hover-transition);
+        color: var(--dark-grey-txt);
+    }
+    
+    .t-nav-list--item_link--active {
+        transition: var(--hover-transition);
+        color: var(--dark-grey-txt);
+    }
+    
+    .t-nav-item--yellow-line {
+        width: 100%;
+        border-bottom: var(--yellow-border);
+    }
 
 .sidenav--vertical_content {
     position: relative;
@@ -103,7 +151,7 @@
     height: 20%;
     margin-top: 20%;
 }
-    
+
     .vertical_content--text {
         transform: rotate(-90deg);
         position: absolute;
@@ -112,17 +160,16 @@
         height: 50px;
         margin-top: 0px;
         margin-left: 15px;
-        font-family: var(--font-arial);
         font-size: 14px;
         color: var(--dark-grey-txt);
     }
-
+    
     .vertical_content--yellow-line {
         height: 10%;
         margin-left: 5px;
         border-left: var(--yellow-border);
     }
-
+    
 .icons {
     display: flex;
     height: 150px;
@@ -131,24 +178,12 @@
     flex-direction: column;
     justify-content: space-around;
 }
-
+    
     .t-nav-icon {
         font-size: 13px;
         color: var(--dark-grey-txt);
     }
-
-.t-header-hero {
-    width: 83.4%;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0), 
-        rgba(50, 50, 50, 0.972)
-        ),
-        url('images/aerial_island.jpg');
-    background-repeat: no-repeat;
-    background-position: 0px 0px, 0px 0px;
-    background-size: auto, cover;
-}
-
+    
 .last_articles {
     height: 1008px;
 }
@@ -180,3 +215,57 @@
 .footer {
     height: 710px;
 }
+
+.t-date-white {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.t-primary-button {
+    margin-top: 40px;
+    padding: 17px 40px;
+    background-color: var(--main-yellow);
+    color: var(--dark-grey-txt);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: var(--hover-transition);
+}
+
+.t-primary-button:hover {
+    transition: var(--hover-transition);
+    background-color: #f6cb5d;
+}
+
+.t-tagline {
+    display: flex;
+    height: 12px;
+    justify-content: center;
+    color: hsla(0, 0%, 100%, .7);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+    
+    .t-tagline_header {
+        max-width: 100%;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .t-tagline_whiteline {
+        width: 5%;
+        border-bottom: 2px solid hsla(0, 0%, 100%, .7);
+    }
