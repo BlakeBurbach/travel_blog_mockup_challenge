@@ -180,8 +180,14 @@ div {
 }
     
     .t-nav-icon {
+        transition: var(--hover-transition);
         font-size: 13px;
         color: var(--dark-grey-txt);
+    }
+
+    .t-nav-icon:hover {
+        transition: var(--hover-transition);
+        font-size: 16px;
     }
     
 .last_articles {
